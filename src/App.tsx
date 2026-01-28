@@ -1,7 +1,9 @@
+import DaysDropdown from "./components/DaysDropdown";
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      < DaysDropdown />
     </>
   );
 }

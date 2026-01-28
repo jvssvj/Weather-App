@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+@source "./src/**/*.{js,ts,jsx,tsx}";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-size: var(--text-font-14);
+  background-color: var(--color-neutral-900);
+}
+
+#root {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@theme {
+  --color-neutral-900: #02012C;
+  --color-neutral-800: #262540;
+  --color-neutral-700: #302F4A;
+  --color-neutral-600: #3C3B5E;
+  --color-neutral-300: #ACACB7;
+  --color-neutral-200: #D4D3D9;
+  --color-neutral-0: #FFFFFF;
+
+  --color-orange-500: #FF820A;
+
+  --color-blue-500: #FF820A;
+  --color-blue-700: #FF820A;
+
+  --radius-radius-4: 4px;
+  --radius-radius-6: 6px;
+  --radius-radius-8: 8px;
+  --radius-radius-10: 10px;
+  --radius-radius-12: 12px;
+  --radius-radius-16: 16px;
+  --radius-radius-20: 20px;
+  --radius-radius-24: 24px;
+  --radius-radius-full: 999px;
+
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-font-14: 14px;
+  --text-font-16: 16px;
+  --text-font-18: 18px;
+  --text-font-20: 20px;
+  --text-font-28: 28px;
+  --text-font-32: 32px;
+  --text-font-58: 32px;
+
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-bricolage-grotesque: "Bricolage Grotesque", sans-serif;
+}

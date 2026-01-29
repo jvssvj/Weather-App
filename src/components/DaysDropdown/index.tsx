@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Option from "../Option";
+import DropdownMenuOptions from "../DropdownMenuOptions";
 
 export default function DaysDropdown() {
     const [selected, setSelected] = useState("Monday");
@@ -10,9 +10,10 @@ export default function DaysDropdown() {
     ];
 
     return (
-        <div className="flex flex-col border border-neutral-600 bg-neutral-700 text-neutral-0 w-full max-w-[214px] font-dm-sans text-font-16 p-2 rounded-radius-12 shadow-xl">
+        <div className="flex flex-col border border-neutral-600 bg-neutral-800 text-neutral-0 w-full max-w-[214px] font-dm-sans text-font-16 p-2 rounded-radius-12 shadow-xl">
             {days.map((day) => (
-                <Option 
+                <DropdownMenuOptions 
+                    isFilterOption={false}
                     key={day} 
                     optionName={day} 
                     isSelected={selected === day}

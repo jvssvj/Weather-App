@@ -27,7 +27,7 @@ export default function SettingsDropdown() {
             ))}
             </nav>
 
-            <hr className="border-1 border-neutral-600 w-full mt-1"/>
+            <hr className="h-0.5 border-neutral-600 w-full mt-1"/>
 
             <span className="inline-block text-neutral-300 p-2">Wind Speed</span>
             <nav className="w-full flex flex-col gap-1">
@@ -42,9 +42,9 @@ export default function SettingsDropdown() {
             ))}
             </nav>
 
-            <hr className="border-1 border-neutral-600 w-full mt-1"/>
+            <hr className="h-0.5 border-neutral-600 w-full mt-1"/>
 
-            <span className="inline-block text-neutral-300 p-2">Wind Speed</span>
+            <span className="inline-block text-neutral-300 p-2">Precipitation</span>
             <nav className="w-full flex flex-col gap-1">
             {precipitation.map((p) => (
                 <DropdownMenuOptions 
